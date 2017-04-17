@@ -6,10 +6,7 @@ const express = require('express'),
 //configure our app
 
 //set the routes
-app.get('/', (req, res) => {
-	res.send('Home page of Andela Finals App');
-
-});
+app.use(require('./app/routes'))
 
 //test our server
 app.listen(port, () => {
